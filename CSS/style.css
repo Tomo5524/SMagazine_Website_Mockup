@@ -1,5 +1,7 @@
-p{
+p, li, span{
 	font-family: 'Baloo Bhaina 2', cursive;
+	font-weight: bold;
+	font-weight: 700;
 }
 
 
@@ -59,6 +61,7 @@ p{
 .grid{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 500px;
 	/*grid-auto-rows: minmax(100px, auto);*/
 
 }
@@ -74,17 +77,13 @@ p{
 
 .flex{
 	display: flex;
-
 }
 
 
-
-
-
 .title-authors{
-	
 	text-align: center;
 	font-size: 39px;
+	font-weight: 700px;
 	color: #333333;
 }
 
@@ -94,7 +93,7 @@ p{
 }
 
 .authorbox1{
-	max-width: 450px;
+	max-width: 500px;
 	margin: 0 auto;
 }
 
@@ -102,6 +101,42 @@ p{
 	max-width: 170px;
 	margin: 0 auto;
 }
+
+#mini-grid{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-auto-rows: 108px;
+	/*padding-top: 25px;
+	height: 108px;*/
+}
+
+#mini-container > *{
+	float: right;
+	border:1px solid white;
+	border-radius: 5px;
+}
+
+#mini-container i{
+	font-size: 50px;
+	background-color: white;
+}
+
+#mini-container span{
+	padding: 10px;
+	position: relative;
+	top: 5px;
+	height: 25px;
+	padding-top:5px;
+	color: white;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+
+/*#i{
+	border:1px solid white;
+	border-radius: 5px;
+}*/
 
 /*
 .flex.center{
